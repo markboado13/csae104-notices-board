@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Practical</title>
+
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .a { background: red; }
+        .b { background: blue; }
+        .c { background: green; }
+        .d { background: orange; }
+        .e { background: purple; }
+        .f { background: brown; }
+    </style>
+</head>
+
+<body>
+
+    <h1>Flexbox Layout</h1>
+
+    <div class="container">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+    </div>
+
+</body>
+</html>
