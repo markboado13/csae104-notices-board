@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campus Notices</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Campus Notices</h1>
+
+        <!-- NAVIGATION -->
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="#notices">Notices</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#deadlines">Deadlines</a></li>
+                <li><a href="#submit">Post a notice</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- CAMPUS NOTICES -->
+        <section id="notices">
+            <h2>Latest Campus Notices</h2>
+
+            <article class="notice">
+                <h2>Library Hours Extended</h2>
+
+                <p class="meta">
+                    <time datetime="2026-10-12">12 October 2026</time>
+                    · <span class="tag">Academic</span>
+                </p>
+
+                <p>
+                    The library stays open until 9 PM during midterm week
+                    to give students more time to study and complete
+                    their academic activities.
+                </p>
+            </article>
+
+            <article class="notice">
+                <h2>Programming Competition</h2>
+
+                <p class="meta">
+                    <time datetime="2026-11-25">25 November 2026</time>
+                    · <span class="tag">Event</span>
+                </p>
+
+                <p>
+                    All Computer Science students are invited to participate
+                    in the upcoming programming competition. Interested
+                    students may register with their respective instructors.
+                </p>
+            </article>
+
+            <article class="notice">
+                <h2>Campus Clean-Up Drive</h2>
+
+                <p class="meta">
+                    <time datetime="2026-12-05">5 December 2026</time>
+                    · <span class="tag">General</span>
+                </p>
+
+                <p>
+                    Students are encouraged to participate in the campus
+                    clean-up drive to maintain a clean, safe, and healthy
+                    learning environment.
+                </p>
+            </article>
+
+        </section>
+
+        <!-- CATEGORIES -->
+        <section id="categories">
+            <h2>Notice Categories</h2>
+
+            <ul>
+                <li>Academic</li>
+                <li>Events</li>
+                <li>General Announcements</li>
+                <li>Student Activities</li>
+                <li>Campus Updates</li>
+            </ul>
+        </section>
+
+        <!-- UPCOMING DEADLINES -->
+        <section id="deadlines">
+            <h2>Upcoming Deadlines</h2>
+
+            <table>
+                <caption>Upcoming Campus Activities and Deadlines</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Enrolment Ends</td>
+                        <td>20 January 2027</td>
+                    </tr>
+
+                    <tr>
+                        <td>Programming Contest Registration</td>
+                        <td>25 January 2027</td>
+                    </tr>
+
+                    <tr>
+                        <td>Research Proposal Submission</td>
+                        <td>30 January 2027</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <!-- NOTICE SUBMISSION FORM -->
+        <section id="submit">
+            <h2>Post a Notice</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="title">Title</label><br>
+                    <input
+                        type="text"
+                        id="title"
+                        name="title"
+                        required
+                        maxlength="100">
+                </p>
+
+                <p>
+                    <label for="category">Category</label><br>
+
+                    <select id="category" name="category">
+                        <option value="academic">Academic</option>
+                        <option value="event">Event</option>
+                        <option value="general">General</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="date">Date</label><br>
+                    <input
+                        type="date"
+                        id="date"
+                        name="date">
+                </p>
+
+                <p>
+                    <label for="message">Message</label><br>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        required></textarea>
+                </p>
+
+                <p>
+                    <label for="email">Your Email</label><br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+                </p>
+
+                <button type="submit">Post Notice</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>College of Computer Science, DMMMSU-SLUC</p>
+        <p>&copy; 2026 Campus Notices Board. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
